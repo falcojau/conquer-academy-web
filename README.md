@@ -2,7 +2,9 @@
 
 A comprehensive multi-page website built to showcase semantic HTML5 best practices. This project simulates a real-world technology academy platform with dedicated sections for courses, news, and user management.
 
-![HTML image](https://programacion.net/files/article/20161223111243_html5.jpg)
+<p align="center">
+  <img src="https://programacion.net/files/article/20161223111243_html5.jpg" width="300" alt="HTML5 Logo">
+</p>
 
 ## 🚀 Features
 * **Multi-page Architecture:** Organized structure with dedicated directories for Blog and Courses content.
@@ -22,4 +24,4 @@ A comprehensive multi-page website built to showcase semantic HTML5 best practic
 * **HTML5:** Semantic markup.
 
 ## ✍️ Author
-* Your Name - [falcojau]
+* [falcojau]
