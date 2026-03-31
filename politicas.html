@@ -1,74 +1,161 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro | Conquer Academy</title>
+    <title>Políticas de Privacidad | Conquer Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
 
-    <header>
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="media/imagenes/logo_conquerblocks.png" alt="Logo ConquerBlocks" width="180">
-            </a>
+    <!-- HEADER -->
+    <header class="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="media/imagenes/logo_conquerblocks.png" alt="Logo ConquerBlocks" class="h-10 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center gap-1">
+                    <a href="index.html" class="px-3 py-2 text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all duration-200 text-sm font-medium flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>Home</a>
+                    <a href="about_us.html" class="px-3 py-2 text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all duration-200 text-sm font-medium flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>Quiénes Somos</a>
+                    <a href="cursos/cursos_list.html" class="px-3 py-2 text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all duration-200 text-sm font-medium flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 3.741-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></svg>Cursos</a>
+                    <a href="blog/blog_list.html" class="px-3 py-2 text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all duration-200 text-sm font-medium flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>Blog</a>
+                    <a href="contacto.html" class="px-3 py-2 text-slate-300 hover:text-orange-400 hover:bg-slate-800 rounded-lg transition-all duration-200 text-sm font-medium flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>Contacto</a>
+                    <div class="flex items-center gap-2 ml-4 pl-4 border-l border-slate-700">
+                        <a href="registro.html" class="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-all duration-200 text-sm font-semibold">Registro</a>
+                        <a href="login.html" class="px-4 py-2 border border-orange-500 text-orange-400 hover:bg-orange-500 hover:text-white rounded-lg transition-all duration-200 text-sm font-semibold">Login</a>
+                    </div>
+                </nav>
+                <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg hover:bg-slate-800 transition-colors">
+                    <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+                    <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">Quiénes Somos</a></li>
-                <li><a href="cursos/cursos_list.html">Cursos</a></li>
-                <li><a href="blog/blog_list.html">Blog</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <nav class="flex flex-col px-4 py-3 gap-1">
+                <a href="index.html" class="px-3 py-2.5 text-slate-300 hover:text-orange-400 hover:bg-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>Home</a>
+                <a href="about_us.html" class="px-3 py-2.5 text-slate-300 hover:text-orange-400 hover:bg-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg>Quiénes Somos</a>
+                <a href="cursos/cursos_list.html" class="px-3 py-2.5 text-slate-300 hover:text-orange-400 hover:bg-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 3.741-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></svg>Cursos</a>
+                <a href="blog/blog_list.html" class="px-3 py-2.5 text-slate-300 hover:text-orange-400 hover:bg-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>Blog</a>
+                <a href="contacto.html" class="px-3 py-2.5 text-slate-300 hover:text-orange-400 hover:bg-slate-700 rounded-lg transition-all text-sm font-medium flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>Contacto</a>
+                <div class="pt-2 mt-1 border-t border-slate-700 flex flex-col gap-2">
+                    <a href="registro.html" class="px-4 py-2.5 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-semibold text-center transition-colors">Registro</a>
+                    <a href="login.html" class="px-4 py-2.5 border border-orange-500 text-orange-400 hover:bg-orange-500 hover:text-white rounded-lg text-sm font-semibold text-center transition-all">Login</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h1>Conquer Academy | Políticas de Privacidad</h1>
-            <p>
-                <p>Actualizado por última vez el 16 de diciembre de 2024.</p>
-Información en cumplimiento de la normativa de protección de datos personales a nivel internacional.
-En prácticamente la totalidad de los Países existen normas de protección de datos pensadas para proteger su información personal.
-Por ello, es muy importante para nosotros que entienda perfectamente qué vamos a hacer con los datos personales que le pedimos.
-Así, seremos transparentes y le daremos el control de sus datos, con un lenguaje sencillo y opciones claras que le permitirán decidir qué haremos con su información personal.
-                <p>Por favor, si una vez leída la presente información le queda alguna duda, no dude en preguntarnos.</p>
-                <p>Muchas gracias por su colaboración.</p>
-            </p>
-        </article>
-        <article>
-            <h3>¿Para qué vamos a usar sus datos?</h3>
-                <p>Con carácter general, sus datos personales serán usados para poder relacionarnos con usted y poder 
-                prestarle nuestros servicios, incluyendo también el comercio electrónico, también conocido como 
-                e-commerce, consistente en la compra y venta de productos o de servicios a través de medios 
-                electrónicos. Asimismo, también pueden ser usados para otras actividades, como enviarle publicidad
-                o promocionar nuestras actividades, así como la emisión de nuestras facturas a su nombre.</p>
-            <h3>¿Por qué necesitamos usar sus datos?</h3>
-                <p>Sus datos personales son necesarios para poder relacionarnos con usted y poder prestarle nuestros 
-                servicios. En este sentido, pondremos a su disposición una serie de casillas que le permitirán decidir
-                de manera clara y sencilla sobre el uso de su información personal. Toda la información que le 
-                requerimos será utilizada para contribuir al correcto desenvolvimiento de la relación de compraventa 
-                de productos que nos une con usted. Datos tales como direcciones o números de teléfono, que en principio
-                parecen no estar relacionados con la actividad de comercio electrónico, serán utilizados únicamente para                    asegurarnos de que pueda disfrutar de los productos adquiridos a través de este sitio web. La 
-                información que nos proporcione deberá ser veraz para que los servicios de comercio electrónico puedan 
-                prestarse de manera coherente y efectiva. Sería interesante, además, que actualice en todo momento la 
-                información que nos proporcione para evitar errores o confusiones futuras que puedan quebrar la correcta
-                prestación de servicios.</p>
-            <h3>¿Cómo vamos a proteger sus datos?</h3>
-                <p>Protegeremos sus datos con medidas de seguridad eficaces en función de los riesgos que conlleve el
-                uso de su información. Para ello, nuestra entidad ha aprobado una Política de Protección de Datos y se
-                realizan controles y auditorías anuales para verificar que sus datos personales están seguros en todo 
-                momento.</p>
-        </article>
+    <main class="flex-1 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-8">
+                <span class="inline-block px-3 py-1 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold rounded-full mb-4 uppercase tracking-wider">Legal</span>
+                <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">Políticas de Privacidad</h1>
+                <p class="text-slate-500 text-sm flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                    </svg>
+                    Actualizado el 16 de diciembre de 2024
+                </p>
+            </div>
+
+            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 space-y-8">
+                <!-- Intro -->
+                <div>
+                    <p class="text-slate-300 leading-relaxed">
+                        Información en cumplimiento de la normativa de protección de datos personales a nivel internacional. En prácticamente la totalidad de los países existen normas de protección de datos pensadas para proteger su información personal. Por ello, es muy importante para nosotros que entienda perfectamente qué vamos a hacer con los datos personales que le pedimos.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mt-4">
+                        Así, seremos transparentes y le daremos el control de sus datos, con un lenguaje sencillo y opciones claras que le permitirán decidir qué haremos con su información personal.
+                    </p>
+                    <p class="text-slate-400 mt-4">Si una vez leída la presente información le queda alguna duda, no dude en <a href="contacto.html" class="text-orange-400 hover:text-orange-300 transition-colors">preguntarnos</a>. Muchas gracias por su colaboración.</p>
+                </div>
+
+                <hr class="border-slate-700">
+
+                <!-- Section 1 -->
+                <div>
+                    <h2 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                        <span class="w-6 h-6 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold rounded-full flex items-center justify-center">1</span>
+                        ¿Para qué vamos a usar sus datos?
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Con carácter general, sus datos personales serán usados para poder relacionarnos con usted y poder prestarle nuestros servicios, incluyendo también el comercio electrónico, también conocido como e-commerce, consistente en la compra y venta de productos o de servicios a través de medios electrónicos. Asimismo, también pueden ser usados para otras actividades, como enviarle publicidad o promocionar nuestras actividades, así como la emisión de nuestras facturas a su nombre.
+                    </p>
+                </div>
+
+                <hr class="border-slate-700">
+
+                <!-- Section 2 -->
+                <div>
+                    <h2 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                        <span class="w-6 h-6 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold rounded-full flex items-center justify-center">2</span>
+                        ¿Por qué necesitamos usar sus datos?
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Sus datos personales son necesarios para poder relacionarnos con usted y poder prestarle nuestros servicios. En este sentido, pondremos a su disposición una serie de casillas que le permitirán decidir de manera clara y sencilla sobre el uso de su información personal. Toda la información que le requerimos será utilizada para contribuir al correcto desenvolvimiento de la relación de compraventa de productos que nos une con usted. Datos tales como direcciones o números de teléfono, que en principio parecen no estar relacionados con la actividad de comercio electrónico, serán utilizados únicamente para asegurarnos de que pueda disfrutar de los productos adquiridos a través de este sitio web.
+                    </p>
+                </div>
+
+                <hr class="border-slate-700">
+
+                <!-- Section 3 -->
+                <div>
+                    <h2 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                        <span class="w-6 h-6 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold rounded-full flex items-center justify-center">3</span>
+                        ¿Cómo vamos a proteger sus datos?
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Protegeremos sus datos con medidas de seguridad eficaces en función de los riesgos que conlleve el uso de su información. Para ello, nuestra entidad ha aprobado una Política de Protección de Datos y se realizan controles y auditorías anuales para verificar que sus datos personales están seguros en todo momento.
+                    </p>
+                </div>
+
+                <hr class="border-slate-700">
+
+                <div class="flex items-center gap-3 p-4 bg-orange-500/5 border border-orange-500/20 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-orange-400 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                    </svg>
+                    <p class="text-slate-400 text-sm">Para cualquier consulta sobre el uso de sus datos, puede <a href="contacto.html" class="text-orange-400 hover:text-orange-300 transition-colors font-medium">contactarnos</a>.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <hr>
-        <p>&copy; 2026 Conquer Blocks. Todos los derechos reservados.</p>
+    <footer class="bg-slate-900 border-t border-slate-800 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <a href="index.html"><img src="media/imagenes/logo_conquerblocks.png" alt="Logo ConquerBlocks" class="h-8 w-auto"></a>
+                <p class="text-slate-400 text-sm text-center">&copy; 2026 Conquer Blocks. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4">
+                    <a href="politicas.html" class="text-orange-400 text-sm">Políticas de Privacidad</a>
+                    <a href="contacto.html" class="text-slate-400 hover:text-orange-400 text-sm transition-colors">Contacto</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
