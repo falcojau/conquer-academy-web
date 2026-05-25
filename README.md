@@ -23,5 +23,5 @@ A comprehensive multi-page website built to showcase semantic HTML5 best practic
 ## 🛠️ Technologies Used
 * **HTML5:** Semantic markup.
 
-## ✍️ Author
-* [falcojau]
+## ✍️ Project
+* https://falcojau.github.io/conquer-academy-web/
